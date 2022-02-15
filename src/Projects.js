@@ -1,12 +1,12 @@
 import React from 'react'
 import bespoke from './images/bespokefashion.png'
 import space from './images/spacecrew.png'
-import Grid from '@mui/material/Grid';
+import news from './images/hackerNews.png'
+import ip from './images/ipFinder.png'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import {styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
-import { Icon } from '@iconify/react';
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -24,28 +24,30 @@ function Projects() {
     const projects = [
         {
             name: 'Bespoke Fashion',
-            description: 'A website to configure outifts for any occasion.',
+            description: 'A website to configure, create and buy outifts for any occasion.',
             image : bespoke,
             github: 'https://github.com/Francine-Pepe/bespokefashion',
             link : 'https://bespokefashion.netlify.app/'
         },
         {
-            name: 'Space crew',
-            description: 'Planet populating game',
+            name: 'Space Crew',
+            description: 'Planet populating game where you the captain must decide how to populate alien planets save it from extinction.',
             image : space,
-            github: 'https://github.com/',
+            github: 'https://github.com/jaisree-ramesh/thespacecrew',
             link : 'https://jaisree-ramesh.github.io/thespacecrew/'
         },
         {
-            name: 'Space crew',
-            description: 'Planet populating game',
-            github: 'https://github.com/',
-            link : 'https://bespokefashion.netlify.app/'
+            name: 'Hacker News',
+            description: 'A hacker news blog that fetchs news from an API with a search function.',
+            image : news,
+            github: 'https://github.com/jaisree-ramesh/api-project',
+            link:''
         },
         {
-            name: 'Space crew',
-            description: 'Planet populating game',
-            github: 'https://github.com/',
+            name: 'Found Your IP',
+            description: 'A website that displays your IP and location with help on an API.',
+            image : ip,
+            github: 'https://github.com/jaisree-ramesh/find-my-ip',
             link : 'https://bespokefashion.netlify.app/'
         },
     ];
@@ -67,7 +69,6 @@ function Projects() {
                     gridTemplateColumns: { md: '1fr 1fr 1fr' },
                     gap:10 ,
                     margin:6 ,
-                   
                     }}
                 >
                     {projects.map ((projects,id) => 
@@ -89,6 +90,7 @@ function Projects() {
                                             variant="h5"
                                             component="div"
                                             color="white"
+                                            
                                             sx={{  fontFamily: "Poiret One", letterSpacing: 1 }}>
                                             {projects.name} <br/> <br/>
                                         </Typography>
@@ -98,10 +100,13 @@ function Projects() {
                                             color="white"
                                             sx={{  fontFamily: "Poiret One", letterSpacing: 1 }}>
                                             {projects.description} <br/>
-                                            <a href={projects.github} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
-                                            Git Repo </a>
-                                            <a href={projects.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
-                                            Website </a> 
+                                            <div className="linksDiv">
+                                                <a href={projects.github} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
+                                                Git Repo </a>
+                                                <a href={projects.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
+                                                Website </a>
+                                            </div>
+                                            
                                         </Typography>
                                     </div> 
                                 </div>

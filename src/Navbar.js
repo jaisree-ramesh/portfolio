@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import logo from './images/logo.png'
 import { Icon } from '@iconify/react';
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [show,setShow] = useState(true);
@@ -13,7 +13,7 @@ function Navbar() {
     return (
             <div className="navContainer">
                 <div className="menuCon">
-                    <h3 className="menuContents">ABOUT</h3>
+                <h3 className="menuContents">ABOUT</h3>  
                     <h3 className="menuContents">PROJECTS</h3>
                     <div>
                         <h3  className="menuContents" onClick={handleShow}>CONTACT</h3>

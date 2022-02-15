@@ -43,11 +43,11 @@ export default function Elevation() {
                             </Typography>
                                 <div className="iconGrid">
                                     <div className="iconItem">
-                                        <Icon icon="akar-icons:html-fill" width="60" height="60" color="white" className="iconImage" />
+                                        <Icon icon="akar-icons:html-fill" width="60" height="60" color="white"  inline={true} className="iconImage" />
                                         <div className="iconTitle"> HTML </div>
                                     </div>
                                     <div className="iconItem">
-                                        <Icon icon="akar-icons:css-fill" width="60" height="60"  height="60" color="white" className="iconImage"  />
+                                        <Icon icon="akar-icons:css-fill" width="60" height="60"  height="60" color="white"  inline={true} className="iconImage"  />
                                         <div className="iconTitle"> CSS </div>
                                     </div>
                                     <div className="iconItem">

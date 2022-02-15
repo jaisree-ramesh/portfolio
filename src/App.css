@@ -1,7 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"); */
-* {
-  font-family: "Poiret One", cursive;
-}
+
 .App {
   text-align: center;
   width: 100vw;
@@ -15,11 +13,13 @@
     hsla(176, 27%, 52%, 1) 100%
   );
   color: white;
+  position: sticky;
+  font-family: "Poiret One", cursive;
 }
 
 .navContainer {
   padding: 10px;
-  width: 100%;
+  width: 99%;
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -158,6 +158,7 @@ li:hover {
 }
 .iconItem:hover .iconImage {
   display: none;
+  overflow: hidden;
 }
 
 .card {
@@ -188,4 +189,20 @@ li:hover {
 
 .side img {
   border-radius: 25px;
+}
+
+.linksDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.linksDiv a {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.685);
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding: 8px;
 }
