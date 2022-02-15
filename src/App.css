@@ -1,0 +1,191 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"); */
+* {
+  font-family: "Poiret One", cursive;
+}
+.App {
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  background: hsla(202, 67%, 20%, 1);
+  background: linear-gradient(
+    180deg,
+    hsla(202, 67%, 20%, 1) 0%,
+    hsla(196, 70%, 28%, 1) 32%,
+    hsla(192, 74%, 41%, 1) 70%,
+    hsla(176, 27%, 52%, 1) 100%
+  );
+  color: white;
+}
+
+.navContainer {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  height: 60px;
+  background: rgb(14, 61, 88);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 16px 24px 2px rgba(9, 42, 61, 0.555);
+}
+
+.menuCon {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.menuContents {
+  margin-left: 50px;
+}
+
+.menuContents:hover {
+  color: hsla(192, 74%, 41%, 1);
+}
+
+.logoCon {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 50px;
+}
+
+.logoCon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.logoBtn {
+  background-color: transparent;
+  border: none;
+  /* position: fixed; */
+}
+.dropdown {
+  position: absolute;
+  /* top: 100%; */
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  display: none;
+}
+
+.dropdownOpen {
+  position: absolute;
+  left: 23%;
+  width: 100px;
+  display: block;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+li {
+  padding: 8px 12px;
+}
+
+li:hover {
+  background-color: rgba(24, 129, 155, 0.671);
+  cursor: pointer;
+}
+
+.infoContainer {
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Poiret One", cursive;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 30px;
+  margin-top: 80px;
+}
+.infoText {
+  text-align: left;
+  width: 50%;
+}
+.infoPic {
+  border-radius: 100%;
+  width: 275px;
+  margin-top: 45px;
+}
+
+.iconGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.iconItem {
+  margin: 22px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.iconTitle {
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.iconItem:hover .iconTitle {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.iconItem:hover .iconImage {
+  display: none;
+}
+
+.card {
+  height: 350px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 350px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: transparent;
+  color: white;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.side img {
+  border-radius: 25px;
+}
