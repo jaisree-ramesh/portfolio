@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: 'transparent',
     borderRadius: 25,
     width:'350px',
-    height: '350px',
+    height: '400px',
     marginLeft: 'auto',
     marginRight: 'auto',
 }));
@@ -26,29 +26,33 @@ function Projects() {
             name: 'Bespoke Fashion',
             description: 'A website to configure, create and buy outifts for any occasion.',
             image : bespoke,
-            github: 'https://github.com/Francine-Pepe/bespokefashion',
+            tech: 'React JS | React Bootstrap | Node JS | Express | Mongo DB',
+            githubFE: 'https://github.com/Francine-Pepe/bespokefashion',
+            githubBE: 'https://github.com/jaisree-ramesh/fashionBE',
             link : 'https://bespokefashion.netlify.app/'
         },
         {
             name: 'Space Crew',
-            description: 'Planet populating game where you the captain must decide how to populate alien planets save it from extinction.',
+            description: 'A game where you the captain must decide how to populate alien planets save it from extinction.',
             image : space,
-            github: 'https://github.com/jaisree-ramesh/thespacecrew',
+            tech: 'React JS | React Bootstrap | Node JS | Express | Mongo DB',
+            githubFE: 'https://github.com/jaisree-ramesh/thespacecrew',
             link : 'https://jaisree-ramesh.github.io/thespacecrew/'
         },
         {
             name: 'Hacker News',
             description: 'A hacker news blog that fetchs news from an API with a search function.',
             image : news,
-            github: 'https://github.com/jaisree-ramesh/api-project',
-            link:''
+            tech: 'React JS | API ',
+            githubFE: 'https://github.com/jaisree-ramesh/api-project',
+            
         },
         {
             name: 'Found Your IP',
             description: 'A website that displays your IP and location with help on an API.',
             image : ip,
-            github: 'https://github.com/jaisree-ramesh/find-my-ip',
-            link : 'https://bespokefashion.netlify.app/'
+            tech: 'React JS | API ',
+            githubFE: 'https://github.com/jaisree-ramesh/find-my-ip',
         },
     ];
 
@@ -58,6 +62,7 @@ function Projects() {
         variant="h4"
         component="div"
         color="white"
+        id='projects'
         sx={{  fontFamily: "Poiret One", letterSpacing: 1 }}>
         PROJECTS<br /> <br />
         </Typography>
@@ -90,7 +95,6 @@ function Projects() {
                                             variant="h5"
                                             component="div"
                                             color="white"
-                                            
                                             sx={{  fontFamily: "Poiret One", letterSpacing: 1 }}>
                                             {projects.name} <br/> <br/>
                                         </Typography>
@@ -99,14 +103,21 @@ function Projects() {
                                             component="div"
                                             color="white"
                                             sx={{  fontFamily: "Poiret One", letterSpacing: 1 }}>
-                                            {projects.description} <br/>
+                                            {projects.description} <br/> <br/> 
+                                            {projects.tech} <br/>
                                             <div className="linksDiv">
-                                                <a href={projects.github} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
-                                                Git Repo </a>
-                                                <a href={projects.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
-                                                Website </a>
+                                                <div style={{ display :  projects.githubFE ? 'block' : "none" }} className="divLink"> 
+                                                    <a href={projects.githubFE} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
+                                                    Frontend Repo</a>
+                                                </div>
+                                                <div style={{ display :  projects.githubBE ? 'block' : "none" }}  className="divLink"> 
+                                                    <a href={projects.githubBE} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
+                                                    Backend Repo</a>
+                                                </div>
+                                                <div style={{ display :  projects.link ? 'block' : "none" }}  className="divLink"> 
+                                                    <a href={projects.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>Website </a>
+                                                </div>
                                             </div>
-                                            
                                         </Typography>
                                     </div> 
                                 </div>

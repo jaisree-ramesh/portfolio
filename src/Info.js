@@ -3,7 +3,7 @@ import pic from './images/pic.jpeg'
 
 function Info() {
     return (
-        <div className="infoContainer">
+        <div className="infoContainer" id='about'>
             <div >
                 <img src={pic} alt="photo" className="infoPic"/>
             </div>

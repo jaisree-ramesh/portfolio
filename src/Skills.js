@@ -16,6 +16,8 @@ const Item = styled(Paper)(({ theme }) => ({
     height: 'auto',
     marginLeft: 'auto',
     marginRight: 'auto',
+    // boxShadow: '0 16px 24px 2px rgba(85, 87, 88, 0.555)',
+    border:'1px rgba(85, 87, 88, 0.555)'
 
 }));
 
@@ -30,7 +32,6 @@ export default function Elevation() {
                         gridTemplateColumns: { md: '1fr 1fr 1fr' },
                         gap:10 ,
                         margin: 5,
-                        
                         }}
                     >
                         <Item elevation = '20' sx={{ p: 2}}> 
