@@ -35,9 +35,6 @@ body {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   height: 60px;
   /* background: rgb(14, 61, 88); */
@@ -49,15 +46,26 @@ body {
   box-shadow: 0 16px 24px 2px rgba(54, 54, 54, 0.555);
   letter-spacing: 2px;
 }
+.navigationS,
+.navigationXL {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.navigation ul {
+.navigationS ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
   width: auto;
 }
 
-.navigation li {
+.navigationXL ul {
+  list-style: none;
+  width: auto;
+}
+
+.navigationS li {
   display: block;
   float: left;
   position: relative;
@@ -65,30 +73,42 @@ body {
   transition-duration: 0.5s;
   margin-bottom: 10px;
 }
-
+.navigationXL li {
+  display: block;
+  float: right;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
+}
 .dropdown li:hover {
   /* background-color: rgba(24, 129, 155, 0.822); */
   background-color: rgba(138, 138, 138, 0.699);
   cursor: pointer;
 }
-
+.navigationXL .dropdown li {
+  /* width: 100%; */
+  padding-right: 38px;
+}
 .navigation li a {
   color: #fff;
 }
-.navigation h3 {
+.navigationS h3 {
   padding-left: 35px;
 }
-.navigation h3:hover {
+
+.navigationS h3:hover {
   /* color: hsla(192, 74%, 41%, 1); */
   color: rgb(138, 138, 138);
   cursor: pointer;
 }
+
 .dropdown {
   background: rgba(196, 196, 196, 0.14);
   box-shadow: 0 16px 24px 2px rgba(63, 63, 63, 0.14);
 }
 
-.navigation ul li ul {
+.navigationS ul li ul {
   visibility: hidden;
   opacity: 0;
   width: 100px;
@@ -96,6 +116,16 @@ body {
   transition: all 0.5s ease;
   display: none;
   margin-left: 40px;
+}
+
+.navigationXL ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  /* width: 100px; */
+  position: absolute;
+  transition: all 0.5s ease;
+  display: none;
+  /* margin-left: 40px; */
 }
 
 .navigation ul li:hover > ul,
@@ -148,6 +178,28 @@ body {
   border-radius: 100%;
   width: 275px;
   margin-top: 45px;
+}
+
+@media only screen and (max-width: 900px) {
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .infoText {
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .navigationS {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .navigationXL {
+    display: none;
+  }
 }
 
 .iconGrid {

@@ -3,6 +3,7 @@ import bespoke from './images/bespokefashion.png'
 import space from './images/spacecrew.png'
 import news from './images/hackerNews.png'
 import ip from './images/ipFinder.png'
+import cal from './images/calculator.png'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import {styled } from '@mui/material/styles';
@@ -53,6 +54,13 @@ function Projects() {
             image : ip,
             tech: 'React JS | API ',
             githubFE: 'https://github.com/jaisree-ramesh/find-my-ip',
+        },
+        {
+            name: 'Calculator',
+            description: 'A react Calculator',
+            image : cal,
+            tech: 'React JS  ',
+            githubFE: 'https://github.com/jaisree-ramesh/calculator',
         },
     ];
 
