@@ -8,6 +8,7 @@
   font-family: "Poiret One", cursive;
   margin: 0;
 }
+
 body {
   width: 100%;
   height: auto;
@@ -83,7 +84,7 @@ body {
 }
 .dropdown li:hover {
   /* background-color: rgba(24, 129, 155, 0.822); */
-  background-color: rgba(138, 138, 138, 0.699);
+  background-color: rgba(43, 43, 43, 0.699);
   cursor: pointer;
 }
 .navigationXL .dropdown li {
@@ -104,8 +105,8 @@ body {
 }
 
 .dropdown {
-  background: rgba(196, 196, 196, 0.14);
-  box-shadow: 0 16px 24px 2px rgba(63, 63, 63, 0.14);
+  background: rgba(196, 196, 196, 0.596);
+  box-shadow: 0 16px 24px 2px rgba(104, 103, 103, 0.568);
 }
 
 .navigationS ul li ul {
@@ -181,6 +182,9 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  body {
+    justify-content: center;
+  }
   .infoContainer {
     display: flex;
     flex-direction: column;
