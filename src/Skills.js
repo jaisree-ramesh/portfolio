@@ -32,6 +32,8 @@ export default function Elevation() {
                         gridTemplateColumns: { md: '1fr 1fr 1fr' },
                         gap:10 ,
                         margin: 5,
+                        justifyContent: 'center' ,
+                        flexWrap: 'wrap'
                         }}
                     >
                         <Item elevation = '20' sx={{ p: 2}}> 

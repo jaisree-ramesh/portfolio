@@ -82,6 +82,7 @@ function Projects() {
                     gridTemplateColumns: { md: '1fr 1fr 1fr' },
                     gap:10 ,
                     margin:6 ,
+                    justifyContent: 'center' 
                     }}
                 >
                     {projects.map ((projects,id) => 
