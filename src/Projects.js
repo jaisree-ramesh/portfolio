@@ -4,6 +4,7 @@ import space from './images/spacecrew.png'
 import news from './images/hackerNews.png'
 import ip from './images/ipFinder.png'
 import cal from './images/calculator.png'
+import memeCreator from './images/memeCreator.png'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import {styled } from '@mui/material/styles';
@@ -23,6 +24,23 @@ const Item = styled(Paper)(({ theme }) => ({
 function Projects() {
 
     const projects = [
+        // {
+        //     name: ,
+        //     description: 'A website to configure, create and buy outifts for any occasion.',
+        //     image :,
+        //     tech: 'React JS | React Bootstrap | Node JS | Express | Mongo DB',
+        //     githubFE: ,
+        //     githubBE: 'https://github.com/jaisree-ramesh/',
+        //     link : ''
+        // },
+        {
+                name: 'Meme Creator',
+                description: 'A website to create or generate a new meme.',
+                image : memeCreator,
+                tech: 'React JS | React Bootstrap ',
+                githubFE: 'https://github.com/jaisree-ramesh/memecreator',
+                link : 'https://jaisree-ramesh.github.io/memecreator/'
+            },
         {
             name: 'Bespoke Fashion',
             description: 'A website to configure, create and buy outifts for any occasion.',
