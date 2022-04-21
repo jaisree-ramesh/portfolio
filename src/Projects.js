@@ -4,6 +4,7 @@ import space from './images/spacecrew.png'
 import news from './images/hackerNews.png'
 import ip from './images/ipFinder.png'
 import cal from './images/calculator.png'
+import task from './images/clipboard.png'
 import memeCreator from './images/memeCreator.png'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -34,14 +35,6 @@ function Projects() {
         //     link : ''
         // },
         {
-                name: 'Meme Creator',
-                description: 'A website to create or generate a new meme.',
-                image : memeCreator,
-                tech: 'React JS | React Bootstrap ',
-                githubFE: 'https://github.com/jaisree-ramesh/memecreator',
-                link : 'https://jaisree-ramesh.github.io/memecreator/'
-            },
-        {
             name: 'Bespoke Fashion',
             description: 'A website to configure, create and buy outifts for any occasion.',
             image : bespoke,
@@ -51,11 +44,28 @@ function Projects() {
             link : 'https://bespokefashion.netlify.app/'
         },
         {
+            name: 'Tasks to do' ,
+            description: 'A website to create a task/ to do list. Create, edit, delete and edit a task. A simple Typescript project',
+            image : task,
+            tech: 'React TS | CSS ',
+            githubFE: 'https://github.com/jaisree-ramesh/todo' ,
+            link : 'https://jaisree-ramesh.github.io/todo/'
+        },
+        {
+                name: 'Meme Creator',
+                description: 'A website to create or generate a new meme.',
+                image : memeCreator,
+                tech: 'React JS | React Bootstrap ',
+                githubFE: 'https://github.com/jaisree-ramesh/memecreator',
+                link : 'https://jaisree-ramesh.github.io/memecreator/'
+            },
+        {
             name: 'Space Crew',
             description: 'A game where you the captain must decide how to populate alien planets save it from extinction.',
             image : space,
             tech: 'React JS | React Bootstrap | Node JS | Express | Mongo DB',
             githubFE: 'https://github.com/jaisree-ramesh/thespacecrew',
+            githubBE: 'https://github.com/KaisBeard/spacecrew',
             link : 'https://jaisree-ramesh.github.io/thespacecrew/'
         },
         {
@@ -64,7 +74,7 @@ function Projects() {
             image : news,
             tech: 'React JS | API ',
             githubFE: 'https://github.com/jaisree-ramesh/api-project',
-            
+            link: 'https://jaisree-ramesh.github.io/hackernews/'
         },
         {
             name: 'Found Your IP',
@@ -135,11 +145,11 @@ function Projects() {
                                             <div className="linksDiv">
                                                 <div style={{ display :  projects.githubFE ? 'block' : "none" }} className="divLink"> 
                                                     <a href={projects.githubFE} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
-                                                    Frontend Repo</a>
+                                                    Code</a>
                                                 </div>
                                                 <div style={{ display :  projects.githubBE ? 'block' : "none" }}  className="divLink"> 
                                                     <a href={projects.githubBE} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none"}}>
-                                                    Backend Repo</a>
+                                                    Backend Code</a>
                                                 </div>
                                                 <div style={{ display :  projects.link ? 'block' : "none" }}  className="divLink"> 
                                                     <a href={projects.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>Website </a>
