@@ -46,7 +46,7 @@ function Projects() {
         },
         {
             name: 'Rock-Paper-Scissors',
-            description: 'A website to play the classic gamw. (Designs from Frontend Mentor)',
+            description: 'A website to play the classic rock, paper and scissors game. (Designs from Frontend Mentor)',
             image : rps,
             tech: 'React JS | CSS',
             githubFE: 'https://github.com/jaisree-ramesh/rock-paper-scissors',
