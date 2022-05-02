@@ -6,6 +6,7 @@ import ip from './images/ipFinder.png'
 import cal from './images/calculator.png'
 import task from './images/clipboard.png'
 import memeCreator from './images/memeCreator.png'
+import rps from './images/rps.png'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import {styled } from '@mui/material/styles';
@@ -42,6 +43,14 @@ function Projects() {
             githubFE: 'https://github.com/Francine-Pepe/bespokefashion',
             githubBE: 'https://github.com/jaisree-ramesh/fashionBE',
             link : 'https://bespokefashion.netlify.app/'
+        },
+        {
+            name: 'Rock-Paper-Scissors',
+            description: 'A website to play the classic gamw. (Designs from Frontend Mentor)',
+            image : rps,
+            tech: 'React JS | CSS',
+            githubFE: 'https://github.com/jaisree-ramesh/rock-paper-scissors',
+            link : 'https://jaisree-ramesh.github.io/rock-paper-scissors/'
         },
         {
             name: 'Tasks to do' ,
