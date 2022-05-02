@@ -45,7 +45,7 @@ function Projects() {
             link : 'https://bespokefashion.netlify.app/'
         },
         {
-            name: 'Rock-Paper-Scissors',
+            name: 'Rock Paper Scissors',
             description: 'A website to play the classic rock, paper and scissors game. (Designs from Frontend Mentor)',
             image : rps,
             tech: 'React JS | CSS',
