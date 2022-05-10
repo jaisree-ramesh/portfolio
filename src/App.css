@@ -260,7 +260,12 @@ body {
   transform: rotateY(180deg);
 }
 .card .side {
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
+  -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    visibility:visible;
+    backface-visibility: hidden;
   border-radius: 6px;
   height: 100%;
   position: absolute;
