@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "title": "Hauptnavigation",
+    "topScroll": "Nach oben scrollen",
+    "github": "GitHub-Profil öffnen",
+    "linkedin": "LinkedIn-Profil öffnen",
+    "resumeDe": "Lebenslauf auf Deutsch herunterladen",
+    "resumeEn": "Lebenslauf auf Englisch herunterladen",
+    "contact": "Kontakt",
+    "contactForm": "Kontaktformular öffnen"
+  },
+  "contactDialog": {
+    "title": "Kontaktieren Sie mich",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "cancel": "Abbrechen",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+  },
+  "info": {
+    "greeting": "Hallo!",
+    "text": "ich bin Jaisree Ramesh, Frontend Developer mit über 3 Jahren Berufserfahrung in der Entwicklung moderner, responsiver und nutzerorientierter Webanwendungen mit React und TypeScript.<br /><br />Ich bin darauf spezialisiert, UX/UI-Designs in saubere, performante Benutzeroberflächen zu übersetzen, wiederverwendbare Komponentenbibliotheken zu entwickeln und Features end-to-end in agilen Teams umzusetzen. Dabei lege ich großen Wert auf Codequalität, Barrierefreiheit, Performance-Optimierung und Skalierbarkeit.<br /><br />In meinen bisherigen Projekten habe ich an produktiven Anwendungen wie Dashboards, Planern und interaktiven Tools gearbeitet und eng mit Designern, Backend-Entwicklern und Product Ownern zusammengearbeitet. Besonders reizt mich das Lösen komplexer UI-Herausforderungen und die kontinuierliche Verbesserung von User Experience und technischer Umsetzung.<br /><br />"
+  },
+  "projects": {
+    "title": "Projekte",
+    "feCode": "Code",
+    "beCode": "Backend-Code",
+    "demo": "Demo",
+    "bespokeDesc": "Eine maßgeschneiderte Fashion-Plattform, auf der Nutzer Outfits nach Stil und Maßen gestalten und kaufen.<br />Designs personalisieren, Stoffe auswählen und Kleidung für jeden Anlass erstellen.<br />Jede Bestellung bietet ein personalisiertes Einkaufserlebnis.",
+    "rpsDesc": "Ein webbasiertes Rock-Paper-Scissors-Spiel gegen den Computer.<br />Spieler wählen Stein, Papier oder Schere und sehen sofort, ob sie gewinnen, verlieren oder unentschieden spielen.<br />Interaktives Gameplay mit Echtzeit-Punktestand.",
+    "todoDesc": "Eine einfache, intuitive To-Do-Webanwendung zur Aufgabenverwaltung.<br />Nutzer können Aufgaben hinzufügen, ansehen und löschen.<br />Hilft, tägliche Aufgaben effizient und interaktiv zu organisieren.",
+    "memeDesc": "Eine unterhaltsame Meme-Creator-Webanwendung zum Erstellen eigener Memes.<br />Bilder hochladen, Text hinzufügen und Beschriftungen in Echtzeit gestalten.<br />Bietet ein interaktives, spaßiges Meme-Erlebnis.",
+    "timoraDesc": "Eine moderne Pomodoro-Timer-App, die hilft, fokussiert und organisiert zu bleiben.<br />Bietet Aufgabenverwaltung, Fokusstatistiken, anpassbare Themes und akustische Hinweise.<br />Barrierefrei mit Tastaturkürzeln und Screenreader-Unterstützung.",
+    "trackwiseDesc": "Trackwise ist ein clientseitiger Ausgaben-Tracker, der Ausgaben überwacht und verwaltet.<br />Bietet Ausgabenverwaltung, Kategoriefilterung und ein Analyse-Dashboard mit Diagrammen.<br />Daten werden sicher in LocalStorage gespeichert."
+  }
+}

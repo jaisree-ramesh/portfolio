@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "title": "main navigation",
+    "topScroll": "Scroll to top",
+    "github": "open GitHub Profile",
+    "linkedin": "open LinkedIn Profile",
+    "resumeDe": "Download Resume in German",
+    "resumeEn": "Download Resume in English",
+    "contact": "Contact",
+    "contactForm": "open contact form"
+  },
+  "contactDialog": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "cancel": "Cancel",
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message. Please try again later."
+  },
+  "info": {
+    "greeting": "Hi there!",
+    "text": "I'm Jaisree Ramesh, a Frontend Developer with over 3 years of professional experience building modern, responsive, and user-focused web applications using React and TypeScript.<br /><br />I specialize in transforming UX/UI designs into clean, performant interfaces, creating reusable component libraries, and delivering features end-to-end in collaborative, agile teams. My work emphasizes code quality, accessibility, performance optimization, and scalability.<br /><br />I have experience working on real-world products such as dashboards, planners, and interactive tools, collaborating closely with designers, backend engineers, and product stakeholders. I enjoy solving complex UI challenges and continuously improving both user experience and technical implementation.<br />"
+  },
+  "projects": {
+    "title": "Projects",
+    "feCode": "Code",
+    "beCode": "Backend Code",
+    "demo": "Demo",
+   "bespokeDesc": "A custom fashion platform where users design and purchase outfits tailored to their style and measurements.<br />Personalize designs, choose fabrics, and create clothing for any occasion.<br />Each order is made to measure, offering a personalized experience.",
+    "rpsDesc":"A web-based Rock-Paper-Scissors game where users play against the computer.<br />Players select rock, paper, or scissors and see instant win, lose, or tie results.<br />The game provides interactive gameplay with score tracking. (Designs from Frontend Mentor)",
+    "todoDesc":"A simple and intuitive To-Do list web app for managing tasks.<br />Users can add, view, and delete tasks with a clean, responsive interface.<br />It helps organize daily tasks efficiently with real-time interaction.",
+    "memeDesc":"A fun Meme Creator web app that lets users generate custom memes.<br />Users can upload images, add text, and style captions in real time.<br />The app delivers an interactive and entertaining meme-making experience.",
+    "timoraDesc":"A modern Pomodoro timer web app that helps users stay focused and organized.<br />It features task management, focus stats, customizable themes, and sound alerts.<br />Designed with accessibility in mind, offering keyboard shortcuts and screen-reader support.",
+    "trackwiseDesc": "Trackwise is a client-side personal expense tracker that helps users monitor and manage their spending.<br />It features expense management, category filtering, and a sleek analytics dashboard with charts and summaries.<br />All data is stored securely in localStorage, offering a responsive and intuitive budgeting experience.",
+    "upNextDesc":"Up Next is a media discovery web app that helps users quickly decide what to watch next by exploring movies in theaters, streaming content, and curated podcasts."
+  }
+}
