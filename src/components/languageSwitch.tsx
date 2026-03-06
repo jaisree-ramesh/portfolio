@@ -2,7 +2,7 @@ import { Switch, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
-const LanguageSwitch = styled(Switch)(({ theme }) => ({
+const LanguageSwitch = styled(Switch)(({}) => ({
   width: 42,
   height: 22,
   padding: 0,

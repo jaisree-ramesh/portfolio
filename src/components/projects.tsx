@@ -35,8 +35,7 @@ const Projects = () => {
 
     {
       name: "UpNext",
-      description:
-        "A website to configure, create and buy outifts for any occasion.",
+      description: <Trans i18nKey="projects.upNextDesc" />,
       // image :,
       tech: [
         "React TS",
